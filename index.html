@@ -1,32 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyBank - Login</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-<nav>
-    <a href="index.html">Dashboard</a>
-    <a href="transfer.html">Transfer</a>
-    <a href="atm.html">ATM Locator</a>
-    <a href="profile.html">Profile</a>
-    <button onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
-</nav>
-<section class="dashboard">
-    <h2>Account Summary and Charts</h2>
-    <p><strong>Account Balance:</strong> $4,500.00</p>
-    <p><strong>Last Transaction:</strong> -$50 (Groceries)</p>
-    <canvas id="balanceChart"></canvas>
-
-    <h3>Recent Transactions</h3>
-    <table>
-        <tr><th>Date</th><th>Description</th><th>Amount</th></tr>
-        <tr><td>July 26</td><td>Groceries</td><td>-$50.00</td></tr>
-        <tr><td>July 25</td><td>Salary</td><td>+$3,000.00</td></tr>
-        <tr><td>July 22</td><td>ATM Withdrawal</td><td>-$200.00</td></tr>
-    </table>
-</section>
+<body class="login-page">
+  <div class="container">
+    <h1>Login to MyBank</h1>
+    <form action="dashboard.html">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
 </body>
 </html>

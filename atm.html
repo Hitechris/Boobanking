@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>ATM Locator</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ATM Locator</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<nav>
-    <a href="index.html">Dashboard</a>
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
     <a href="transfer.html">Transfer</a>
     <a href="atm.html">ATM Locator</a>
-    <a href="profile.html">Profile</a>
-    <button onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
-</nav>
-<h2>ATM Locator</h2>
-<p>Feature coming soon...</p>
+    <a href="index.html">Logout</a>
+  </nav>
+  <div class="container">
+    <h2>ATM Locator</h2>
+    <p>Use your current location or search by city to find nearby ATMs.</p>
+    <input type="text" placeholder="Enter city or ZIP code" />
+    <button>Search</button>
+  </div>
 </body>
 </html>
