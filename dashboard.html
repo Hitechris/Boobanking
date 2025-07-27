@@ -2,15 +2,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>MyBank Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - MyBank</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="dashboard-container">
-        <h1>Welcome to MyBank Dashboard</h1>
-        <p>This is a demo dashboard page. Your account overview will appear here.</p>
-        <a href="index.html" class="logout-button">Logout</a>
+  <nav>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="transfer.html">Transfer</a></li>
+      <li><a href="atm.html">ATM Locator</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </nav>
+  <div class="dashboard-content">
+    <h2>Welcome to Your Dashboard</h2>
+    <p>Account Summary and Charts:</p>
+    <div class="account-summary">
+      <p><strong>Account Balance:</strong> $4,500.00</p>
+      <p><strong>Last Transaction:</strong> -$50 (Groceries)</p>
     </div>
+    <canvas id="balanceChart" width="300" height="150"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
