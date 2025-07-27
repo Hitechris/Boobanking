@@ -1,28 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Transfer - MyBank</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>Transfer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="dashboard.html">Dashboard</a></li>
-      <li><a href="transfer.html">Transfer</a></li>
-      <li><a href="atm.html">ATM Locator</a></li>
-      <li><a href="index.html">Logout</a></li>
-    </ul>
-  </nav>
-  <div class="transfer-form">
-    <h2>Transfer Funds</h2>
-    <form>
-      <input type="text" placeholder="Recipient Account" required />
-      <input type="number" placeholder="Amount ($)" required />
-      <button type="submit">Send</button>
-    </form>
-  </div>
+<nav>
+    <a href="index.html">Dashboard</a>
+    <a href="transfer.html">Transfer</a>
+    <a href="atm.html">ATM Locator</a>
+    <a href="profile.html">Profile</a>
+    <button onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
+</nav>
+<h2>Transfer Money</h2>
+<form onsubmit="return confirmTransfer()">
+    <input type="text" placeholder="Recipient Name" required />
+    <input type="number" placeholder="Amount" required />
+    <button type="submit">Send</button>
+</form>
+<div id="confirmationMessage" style="display:none;">
+    ✅ Transfer Successful!
+</div>
 </body>
 </html>
