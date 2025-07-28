@@ -21,6 +21,26 @@
     <p><strong>Address:</strong> Miami, FL</p>
   </div>
 </div>
+    
+    <div class="card">
+  <h2>Transfer Money</h2>
+  <form id="transfer-form">
+    <div class="form-group">
+      <label for="recipient">Recipient Name</label>
+      <input type="text" id="recipient" placeholder="e.g. John Doe" required />
+    </div>
+    <div class="form-group">
+      <label for="account">Account Number</label>
+      <input type="text" id="account" placeholder="e.g. 12345678" required />
+    </div>
+    <div class="form-group">
+      <label for="amount">Amount ($)</label>
+      <input type="number" id="amount" placeholder="e.g. 100.00" required />
+    </div>
+    <button type="submit">Send Money</button>
+  </form>
+  <p id="transfer-status" class="login-message"></p>
+</div>
     <!-- ✅ Account Summary -->
     <!-- ✅ Transaction History -->
 <div class="card">
