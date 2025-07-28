@@ -66,3 +66,33 @@ p {
 .logout:hover {
   text-decoration: underline;
 }
+/* Transaction History Table */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.transaction-table th {
+  background-color: #004466;
+  color: #fff;
+}
+
+.transaction-table td {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.positive {
+  color: #00ff99;
+}
+
+.negative {
+  color: #ff4d4d;
+}
