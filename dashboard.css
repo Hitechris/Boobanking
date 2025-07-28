@@ -96,3 +96,37 @@ p {
 .negative {
   color: #ff4d4d;
 }
+/* Transaction Table */
+.transactions {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.transactions th,
+.transactions td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.transactions th {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.transactions td {
+  color: #ffffff;
+}
+
+.transactions .debit {
+  color: #ff6b6b;
+}
+
+.transactions .credit {
+  color: #4cd137;
+}
