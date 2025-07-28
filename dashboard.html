@@ -27,8 +27,14 @@
   <form id="transfer-form">
     <div class="form-group">
       <label for="recipient">Recipient Name</label>
-      <input type="text" id="recipient" placeholder="e.g. John Doe" required />
-    </div>
+       <input type="text" id="recipient" placeholder="e.g. John Doe" required />
+
+<div class="card">
+  <h2>Find Nearby ATMs</h2>
+  <div id="map" style="height: 300px; width: 100%; border-radius: 10px;"></div>
+</div>
+       </div>
+    
     <div class="form-group">
       <label for="account">Account Number</label>
       <input type="text" id="account" placeholder="e.g. 12345678" required />
@@ -110,6 +116,39 @@
       status.textContent = "❌ Please fill out all fields.";
     }
   });
+</script>
+
+  <script>
+  function initMap() {
+    const myLocation = { lat: 25.7617, lng: -80.1918 }; // Example: Miami, FL
+
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 13,
+      center: myLocation,
+    });
+
+    const request = {
+      location: myLocation,
+      radius: 5000,
+      type: ["atm"],
+    };
+
+    const service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(request, (results, status) => {
+      if (status === google.maps.places.PlacesServiceStatus.OK) {
+        for (let i = 0; i < results.length; i++) {
+          new google.maps.Marker({
+            map,
+            position: results[i].geometry.location,
+          });
+        }
+      }
+    });
+  }
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=places">
 </script>
 </body>
 </html>
