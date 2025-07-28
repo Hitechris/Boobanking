@@ -100,7 +100,7 @@ max-width: 100%;
 }
 
 .amount-debit {
-  color: #ff4d4d; /* white for debits */
+  color: #ff4d4d; /* red for debits */
   font-weight: bold;
 }
 .positive {
