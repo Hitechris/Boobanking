@@ -1,0 +1,123 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #000;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Dashboard Container */
+.dashboard-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Titles and Headers */
+h1, h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Account Details */
+.account-details {
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+
+/* Transaction Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #222;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background: linear-gradient(to right, #232526, #414345);
+  color: #eee;
+}
+
+body.dark-mode .dashboard-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+body.dark-mode table {
+  background-color: #333;
+  color: #eee;
+}
+
+body.dark-mode th {
+  background-color: #111;
+}
+
+body.dark-mode td {
+  background-color: #222;
+}
