@@ -63,7 +63,7 @@ max-width: 100%;
 
 /* ✅ Style debit amounts */
 td.debit {
-  color: #ff4d4d; /* white for debits */
+  color: #ffffff; /* white for debits */
   font-weight: bold;
 }
 
