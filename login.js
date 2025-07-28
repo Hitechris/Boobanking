@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const password = loginForm.querySelector("input[type='password']").value;
 
     // Simple login logic
-    if (email === if (email === "admin@example.com" && password === "admin123") {
+    if (email === "admin@example.com" && password === "admin123") {
       window.location.href = "dashboard.html";
     } else {
       alert("Invalid email or password!");
