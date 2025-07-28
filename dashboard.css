@@ -57,6 +57,16 @@ max-width: 100%;
 }
 
 .transactions td {
+ /* ✅ Force debit and credit colors inside table */
+td.debit {
+  color: #ff4d4d; /* red for debits */
+  font-weight: bold;
+}
+
+td.credit {
+  color: #00ff99; /* green for credits */
+  font-weight: bold;
+}
   color: #ddd;
 }
 
