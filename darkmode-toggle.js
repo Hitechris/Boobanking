@@ -1,1 +1,1 @@
-function toggleDarkMode() {}
+// Dark mode toggle logic
