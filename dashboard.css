@@ -93,7 +93,15 @@ max-width: 100%;
 .transaction-table td {
   background-color: rgba(255, 255, 255, 0.05);
 }
+.amount-credit {
+  color: #00ff99; /* green for credits */
+  font-weight: bold;
+}
 
+.amount-debit {
+  color: #ff4d4d; /* red for debits */
+  font-weight: bold;
+}
 .positive {
   color: #00ff99;
 }
