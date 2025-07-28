@@ -109,7 +109,16 @@ max-width: 100%;
 
 .negative {
   color: #ff4d4d;
+.transactions .debit {
+  color: #ff4d4d; /* red for debits */
+  font-weight: bold;
 }
+
+.transactions .credit {
+  color: #00ff99; /* green for credits */
+  font-weight: bold;
+}}
+
 /* Transaction Table */
 .transactions {
   width: 100%;
