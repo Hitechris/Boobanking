@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyBank Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
 </head>
 <body>
-  <div class="login-container">
+  <div class="dashboard-container">
     <h1>Welcome to MyBank Dashboard</h1>
     <p>You have successfully logged in.</p>
-    <a href="login.html">Logout</a>
+    
+    <!-- ✅ Account Summary -->
+    <div class="card">
+      <h2>Account Summary</h2>
+      <p><strong>Account Number:</strong> ****1234</p>
+      <p><strong>Account Holder:</strong> Fernando Malachovski</p>
+      <p><strong>Balance:</strong> $12,450.00</p>
+      <p><strong>Last Transaction:</strong> -$200.00 (July 26, 2025)</p>
+    </div>
+
+    <a href="index.html" class="logout">Logout</a>
   </div>
 </body>
 </html>
