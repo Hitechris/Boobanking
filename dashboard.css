@@ -56,18 +56,22 @@ max-width: 100%;
   color: #fff;
 }
 
+/* ✅ Set default td style */
 .transactions td {
- /* ✅ Force debit and credit colors inside table */
+  color: #ddd;
+}
+
+/* ✅ Style debit amounts */
 td.debit {
   color: #ff4d4d; /* red for debits */
   font-weight: bold;
 }
 
+/* ✅ Style credit amounts */
 td.credit {
   color: #00ff99; /* green for credits */
   font-weight: bold;
 }
-  color: #ddd;
 }
 
 /* Logout link */
