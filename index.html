@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MyBank - Login</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Online Banking Dashboard</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="login-page">
-  <div class="container">
-    <h1>Login to MyBank</h1>
-    <form action="dashboard.html">
-      <input type="text" placeholder="Username" required />
-      <input type="password" placeholder="Password" required />
-      <button type="submit">Login</button>
-    </form>
-  </div>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Transfer</a></li>
+            <li><a href="#">ATM Locator</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to Your Dashboard</h1>
+        <p><strong>Account Balance:</strong> $4,500.00</p>
+        <p><strong>Last Transaction:</strong> -$50 (Groceries)</p>
+        <canvas id="balanceChart" width="400" height="200"></canvas>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
