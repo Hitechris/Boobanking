@@ -1,1 +1,1 @@
-// JS logic
+console.log('Main script');

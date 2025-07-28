@@ -1,1 +1,1 @@
-// Firebase config placeholder
+console.log('Firebase config');

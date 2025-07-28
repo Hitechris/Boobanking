@@ -1,1 +1,1 @@
-// Dark mode toggle logic
+console.log('Dark mode toggle');
