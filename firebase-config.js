@@ -1,1 +1,1 @@
-// Firebase config here
+<!-- firebase-config.js placeholder -->
