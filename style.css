@@ -1,36 +1,42 @@
+
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #1e3c72, #2a5298);
+  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: white;
 }
 
-.login-container, .dashboard-container {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 30px;
-  border-radius: 10px;
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 90%;
-  max-width: 400px;
 }
 
-input, button {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 button {
+  width: 100%;
   background-color: #4CAF50;
   color: white;
-  font-size: 16px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -38,24 +44,7 @@ button:hover {
   background-color: #45a049;
 }
 
-.logo {
-  width: 80px;
-  margin-bottom: 20px;
-}
-
-nav.navbar {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  background-color: #111;
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-nav.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+.error-msg {
+  color: red;
+  margin-top: 10px;
 }
