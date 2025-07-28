@@ -6,7 +6,13 @@ body {
   padding: 20px;
 }
 
-.dashboard-container {
+.login-message {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+}
   max-width: 800px;
   margin: 0 auto;
 }
