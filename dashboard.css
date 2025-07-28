@@ -110,13 +110,7 @@ max-width: 100%;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
   overflow: hidden;
-  .transactions {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-  table-layout: fixed;
-}
-
+  .
 
 .transactions th,
 .transactions td {
