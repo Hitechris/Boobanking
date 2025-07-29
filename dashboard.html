@@ -248,6 +248,16 @@ transition: all 0.3s ease;
     🔍 Open in Google Maps
   </a>
 </div>
+
+  <script>
+  setTimeout(() => {
+    const status = document.getElementById('transfer-status');
+    if (status) {
+      status.style.opacity = '0';
+      status.style.transition = 'opacity 0.5s ease';
+    }
+  }, 4000); // Hide after 4 seconds
+</script>
 </body>
 </html>
 
