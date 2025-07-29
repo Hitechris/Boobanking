@@ -121,3 +121,57 @@ body.dark-mode th {
 body.dark-mode td {
   background-color: #222;
 }
+
+/* ===== Transaction History Styling ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  margin: 0;
+  padding: 30px;
+}
+
+.section-title {
+  text-align: center;
+  color: #00bfff;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+table.transactions {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+table.transactions thead tr {
+  background-color: #007bff;
+  color: white;
+}
+
+table.transactions th,
+table.transactions td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+table.transactions tbody tr:nth-child(even) {
+  background-color: #2c2c2c;
+}
+
+table.transactions tbody tr:nth-child(odd) {
+  background-color: #1a1a1a;
+}
+
+.credit {
+  color: #00ff99;
+}
+
+.debit {
+  color: #ff4d4d;
+}
