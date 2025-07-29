@@ -445,13 +445,25 @@ transition: all 0.3s ease;
 </script>
 
 
-    <!-- Confirmation Modal -->
+ <!-- Success Message Placeholder -->
+<div id="transfer-status" class="status-message"></div>
+
+<!-- Transfer Form -->
+<form id="transfer-form">
+  <input type="text" id="recipient-name" placeholder="e.g. John Doe" required />
+  <input type="text" id="account-number" placeholder="e.g. 12345678" required />
+  <input type="number" id="amount" placeholder="e.g. 100.00" required />
+  <button type="submit">Send Money</button>
+</form>
+
+<!-- Confirmation Modal -->
 <div id="confirmation-modal" class="modal hidden">
   <div class="modal-content">
-    <p>Are you sure you want to send to <span id="recipient-name">someone</span>?</p>
+    <p>Are you sure you want to send to <span id="recipient-display"></span>?</p>
     <button id="confirm-send">Yes, Send</button>
     <button id="cancel-send">Cancel</button>
   </div>
+</div>
 </body>
 </html>
 
