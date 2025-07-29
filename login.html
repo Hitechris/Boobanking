@@ -1,49 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Boobanking</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-  body {
-    background-image: url('IMG_2415.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('IMG_2415.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-  .login-container {
-  max-width: 400px;
-  margin: 100px auto;
-  background-color: rgba(0, 0, 0, 0.6); /* dark transparent box */
-  padding: 30px;
-  border-radius: 10px;
-  color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+    }
 
-  input, button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 5px;
-}  
-</style>
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-container button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 500px) {
+      .login-container {
+        margin: 20px;
+        padding: 25px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="login-container">
     <h2>Login</h2>
     <form>
-      <input type="email" placeholder="Enter an email address" required>
-      <input type="password" placeholder="Password" required>
+      <input type="email" placeholder="Enter your email" required />
+      <input type="password" placeholder="Enter your password" required />
       <button type="submit">Login</button>
     </form>
   </div>
-
-  <script src="login.js"></script>
 </body>
 </html>
