@@ -2,91 +2,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Transaction History</title>
-  <link rel="stylesheet" href="style.css"> <!-- Optional if you have external CSS -->
-  <style>
-    body {
-      background-color: #0a0f1a;
-      color: white;
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-
-    h2 {
-      color: #00bfff;
-      text-align: center;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-      background-color: #1a2233;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-
-    th, td {
-      padding: 12px 15px;
-      text-align: left;
-      border-bottom: 1px solid #2c3e50;
-    }
-
-    th {
-      background-color: #007bff;
-      color: white;
-    }
-
-    tr:hover {
-      background-color: #2a3c57;
-    }
-
-    a.back-btn {
-      display: inline-block;
-      margin-top: 20px;
-      color: #00bfff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="dark-theme">
+  <div class="container">
+    <h2 class="section-title">Transaction History</h2>
+    <table class="transactions">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Type</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>July 28, 2025</td>
+          <td>ATM Withdrawal</td>
+          <td>Debit</td>
+          <td class="debit">- $100.00</td>
+        </tr>
+        <tr>
+          <td>July 27, 2025</td>
+          <td>Online Deposit</td>
+          <td>Credit</td>
+          <td class="credit">+ $500.00</td>
+        </tr>
+        <tr>
+          <td>July 26, 2025</td>
+          <td>Online Transfer</td>
+          <td>Debit</td>
+          <td class="debit">- $200.00</td>
+        </tr>
+      </tbody>
+    </table>
 
-  <h2>Transaction History</h2>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Description</th>
-        <th>Type</th>
-        <th>Amount</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Example rows -->
-      <tr>
-        <td>July 28, 2025</td>
-        <td>ATM Withdrawal</td>
-        <td>Debit</td>
-        <td>-$100.00</td>
-      </tr>
-      <tr>
-        <td>July 27, 2025</td>
-        <td>Online Deposit</td>
-        <td>Credit</td>
-        <td>+$500.00</td>
-      </tr>
-      <tr>
-        <td>July 26, 2025</td>
-        <td>Online Transfer</td>
-        <td>Debit</td>
-        <td>-$200.00</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <a href="dashboard.html" class="back-btn">← Back to Dashboard</a>
-
+    <br />
+    <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+  </div>
 </body>
 </html>
