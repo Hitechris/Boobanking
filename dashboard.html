@@ -152,7 +152,53 @@
     transform: translateY(0);
   }
 }
-  
+/* === Modal Styling === */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #1e1e2f;
+  padding: 25px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.modal-content button {
+  margin: 10px 8px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#confirm-send {
+  background-color: #28a745;
+  color: white;
+}
+
+#cancel-send {
+  background-color: #dc3545;
+  color: white;
+}
+    
 </style>
   </h2>
 <!-- Your form -->
@@ -329,6 +375,15 @@ transition: all 0.3s ease;
   <div id="confirmation-modal" class="modal hidden">
   <div class="modal-content">
     <p>Are you sure you want to send <span id="confirm-amount"></span> to <span id="confirm-recipient"></span>?</p>
+    <button id="confirm-send">Yes, Send</button>
+    <button id="cancel-send">Cancel</button>
+  </div>
+</div>
+
+    <!-- Confirmation Modal -->
+<div id="confirmation-modal" class="modal hidden">
+  <div class="modal-content">
+    <p>Are you sure you want to send to <span id="recipient-name">someone</span>?</p>
     <button id="confirm-send">Yes, Send</button>
     <button id="cancel-send">Cancel</button>
   </div>
