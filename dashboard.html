@@ -50,6 +50,66 @@
     border-radius: 8px;
     font-size: 16px;
     box-sizing: border-box;
+
+     /* === Modal Styles === */
+  .modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .modal.hidden {
+    display: none;
+  }
+
+  .modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .modal-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .modal-content button {
+    margin: 5px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #confirm-send {
+    background-color: #28a745;
+    color: white;
+  }
+
+  #cancel-send {
+    background-color: #dc3545;
+    color: white;
+  }
+
+  #confirm-send:hover {
+    background-color: #218838;
+  }
+
+  #cancel-send:hover {
+    background-color: #c82333;
+  }
+</style> 
   }
 
   .transfer-form button {
@@ -259,6 +319,14 @@ transition: all 0.3s ease;
     }
   }, 4000); // Hide after 4 seconds
 </script>
+
+  <div id="confirmation-modal" class="modal hidden">
+  <div class="modal-content">
+    <p>Are you sure you want to send <span id="confirm-amount"></span> to <span id="confirm-recipient"></span>?</p>
+    <button id="confirm-send">Yes, Send</button>
+    <button id="cancel-send">Cancel</button>
+  </div>
+</div>
 </body>
 </html>
 
